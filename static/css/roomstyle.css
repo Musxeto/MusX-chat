@@ -1,0 +1,161 @@
+/* Set background color to #161616 */
+body {
+    background-color: #161616;
+    color: white;
+    font-family: 'Black Ops One Regular', cursive;
+}
+
+.content {
+    background-color: #333;
+    min-height: 100vh;
+}
+
+/* Style the chat room heading */
+.heading h2 {
+    padding: 20px;
+    background-color: #161616;
+    color: purple;
+    height: 80px;
+}
+
+.animated-text {
+    font-family: "Black Ops One Regular", Arial, sans-serif;
+    font-size: 60px;
+    color: #fff;
+    animation: glow 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes glow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(136, 74, 136), 0 0 70px rgb(136, 74, 136), 0 0 80px rgb(136, 74, 136), 0 0 100px rgb(136, 74, 136);
+    }
+
+    50% {
+        text-shadow: none;
+    }
+}
+
+/* Style the message box */
+/* Style the message box */
+.message-box {
+    background-color: #161616;
+    border: 1px solid purple;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 0px;
+    /* Custom scrollbar styles */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: purple #161616;
+    /* Firefox */
+}
+
+/* Track */
+.message-box::-webkit-scrollbar {
+    width: 6px;
+    /* Width of the scrollbar track */
+}
+
+/* Handle */
+.message-box::-webkit-scrollbar-thumb {
+    background: purple;
+    /* Color of the scrollbar handle */
+    border-radius: 10px;
+    /* Rounded corners on the handle */
+}
+
+/* Handle on hover */
+.message-box::-webkit-scrollbar-thumb:hover {
+    background: #630063;
+    /* Darker purple on hover */
+}
+
+
+/* Style individual messages */
+/* Style individual messages */
+.message {
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    margin: 5px 0;
+    /* Adjust the margin to separate messages vertically */
+    padding: 8px;
+    max-width: 70%;
+    /* Limit message width */
+    word-wrap: break-word;
+    display: inline-block;
+    clear: both;
+    /* Clear floats to ensure one message per line */
+}
+
+
+/* Style the date and time */
+.date {
+    color: gray;
+    font-size: 12px;
+    float: right;
+}
+
+/* Style the message input */
+.message-input {
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    border-top: 1px solid purple;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+}
+
+/* Style the message input field */
+#message {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    background-color: #161616;
+    color: white;
+}
+
+/* Style the send button */
+#send-btn {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Style the send button on hover */
+#send-btn:hover {
+    background-color: #630063;
+    /* Darker purple on hover */
+}
+
+/* Media query for screens with a maximum width of 768px (typical mobile devices) */
+@media (max-width: 768px) {
+
+    /* Adjust the styles for smaller screens */
+    .content {
+        min-height: 100%;
+        padding-bottom: 100px;
+        /* Ensure the content takes up the full height of the screen */
+    }
+
+    .message-box {
+        min-height: 70vh;
+        max-height: 70vh;
+        
+        /* Limit the message box height to 50% of the viewport height */
+    }
+
+}

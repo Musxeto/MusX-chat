@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #161616;
+  position: fixed;
+  text-align: center;
+  /* Center text within the header */
+  padding: 20px 0;
+  overflow: visible;
+  /* Add padding to provide space */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  align-items: center;
+  /* Center horizontally */
+  text-align: center;
+  /* Center text within the container */
+  padding: 20px;
+  
+  
+}
+
+.container {
+  background-color: #161616;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  min-height: 80vh;
+  margin-top: 100px;
+  /* Ensure content spans the full viewport height */
+}
+
+.form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  /* Ensure form stretches to its container's width */
+  max-width: 400px;
+  /* Limit form width for readability */
+
+}
+
+.form-title {
+  color: #9c27b0;
+}
+
+/* Add a new class for the Join a Room section */
+.join-room {
+  text-align: center;
+  /* Center text within the box */
+  background-color: #333;
+  padding: 20px;
+  margin-left: 240px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  /* Add some spacing between the Join button and the rest of the form */
+}
+
+
+/* Rest of your existing CSS styles remain the same */
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #444;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.form-button,
+.create-button {
+  background-color: #9c27b0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #c20000;
+}
+
+.animated-text {
+  font-family: "Black Ops One Regular", Arial, sans-serif;
+  font-size: 60px;
+  color: #fff;
+  animation: glow 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes glow {
+
+  0%,
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(136, 74, 136), 0 0 70px rgb(136, 74, 136), 0 0 80px rgb(136, 74, 136), 0 0 100px rgb(136, 74, 136);
+  }
+
+  50% {
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: -10px;
+    /* Adjust the margin-top to a smaller negative value */
+    min-height: 100vh;
+    /* Add some positive padding-top to create space between header and form */
+  }
+  .animated-text{
+    font-size: 50px;
+  }
+
+  .form-input {
+    width: 100%;
+  }
+
+  .join-room {
+    margin-left: 0px;
+
+  }
+
+  .form-button,
+  .create-button {
+    width: 100%;
+  }
+}
