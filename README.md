@@ -23,7 +23,7 @@ pip install flask-socketio
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/musxeto/MusX-chat.git
-    cd musx-chat
+    cd MusX-chat
     ```
 2. **Run the application:**
     ```bash
