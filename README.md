@@ -53,4 +53,4 @@ Feel free to customize the application by modifying the HTML templates or updati
 If you'd like to contribute to the development of MusX Chat, please open an issue or submit a pull request. Your feedback and contributions are highly appreciated.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+none plug stole it
